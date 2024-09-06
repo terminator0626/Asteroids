@@ -2,6 +2,7 @@ import pygame
 from constants import *
 import sys
 from circleshape import *
+from player import *
 
 pygame.init()
 
@@ -24,6 +25,7 @@ def main ():
         screen.fill((0, 0, 0))
         pygame.display.flip()
         dt = clock.tick(60) / 1000.0
+        player.draw(screen)
 
 
 if __name__ == "__main__":
